@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Golos-Text_Bold.ttf">
+            <string>GolosText-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="foodly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="211"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gru-mu-qel">
+                        <rect key="frame" x="0.0" y="0.0" width="157" height="211"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 41" translatesAutoresizingMaskIntoConstraints="NO" id="VIp-hg-shI">
+                                <rect key="frame" x="42.5" y="10" width="72" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="crd-Bx-JeI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Молоко 1,5% ультрапастеризованное 970 мл Простоквашино безлактозное" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXM-Rf-iL9">
+                                <rect key="frame" x="20" y="96" width="117" height="60"/>
+                                <fontDescription key="fontDescription" name="GolosText-Bold" family="Golos" pointSize="10"/>
+                                <color key="textColor" name="OffBlack"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maf-Pc-J0F">
+                                <rect key="frame" x="20" y="176" width="41" height="20"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wyz-8M-aW5">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="vpZ-bN-Fqs">
+                                                <rect key="frame" x="0.0" y="5" width="20.5" height="10"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.9" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AE-5D-9qo">
+                                                <rect key="frame" x="20.5" y="4" width="20.5" height="12"/>
+                                                <fontDescription key="fontDescription" name="GolosText-Bold" family="Golos" pointSize="10"/>
+                                                <color key="textColor" name="Background"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Success"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="08U-Qs-WJh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wyz-8M-aW5" secondAttribute="trailing" id="7R1-yg-dib"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wyz-8M-aW5" secondAttribute="bottom" id="996-NT-f4u"/>
+                                    <constraint firstItem="Wyz-8M-aW5" firstAttribute="leading" secondItem="maf-Pc-J0F" secondAttribute="leading" id="Avb-rU-gmu"/>
+                                    <constraint firstItem="Wyz-8M-aW5" firstAttribute="top" secondItem="maf-Pc-J0F" secondAttribute="top" id="gcu-i4-f7B"/>
+                                    <constraint firstAttribute="width" constant="41" id="uJg-Sh-Qhw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="maf-Pc-J0F" firstAttribute="leading" secondItem="CXM-Rf-iL9" secondAttribute="leading" id="CRL-fq-8ga"/>
+                            <constraint firstItem="CXM-Rf-iL9" firstAttribute="centerX" secondItem="VIp-hg-shI" secondAttribute="centerX" id="DC3-aK-toI"/>
+                            <constraint firstItem="CXM-Rf-iL9" firstAttribute="leading" secondItem="gru-mu-qel" secondAttribute="leading" constant="20" id="I8X-iB-hxf"/>
+                            <constraint firstItem="VIp-hg-shI" firstAttribute="centerX" secondItem="gru-mu-qel" secondAttribute="centerX" id="LTO-fl-O1q"/>
+                            <constraint firstItem="maf-Pc-J0F" firstAttribute="top" secondItem="CXM-Rf-iL9" secondAttribute="bottom" constant="20" id="cKm-c3-YEv"/>
+                            <constraint firstItem="CXM-Rf-iL9" firstAttribute="top" secondItem="VIp-hg-shI" secondAttribute="bottom" constant="8" id="ffT-Ti-Q1b"/>
+                            <constraint firstItem="VIp-hg-shI" firstAttribute="top" secondItem="gru-mu-qel" secondAttribute="top" constant="10" id="kDG-oH-vxt"/>
+                            <constraint firstItem="VIp-hg-shI" firstAttribute="width" secondItem="gru-mu-qel" secondAttribute="width" multiplier="0.458599" id="mpl-d4-YwY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="gru-mu-qel" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7d7-Y4-FJi"/>
+                <constraint firstAttribute="bottom" secondItem="gru-mu-qel" secondAttribute="bottom" id="YPB-B4-WkQ"/>
+                <constraint firstItem="gru-mu-qel" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bEt-UI-nJY"/>
+                <constraint firstAttribute="trailing" secondItem="gru-mu-qel" secondAttribute="trailing" id="xUH-29-K6c"/>
+            </constraints>
+            <size key="customSize" width="157" height="211"/>
+            <connections>
+                <outlet property="markNumber" destination="2AE-5D-9qo" id="b43-G8-9Eq"/>
+                <outlet property="markView" destination="maf-Pc-J0F" id="jNr-pN-njz"/>
+                <outlet property="productImage" destination="VIp-hg-shI" id="Lfz-UA-PzP"/>
+                <outlet property="productLabel" destination="CXM-Rf-iL9" id="RUo-4u-lsO"/>
+            </connections>
+            <point key="canvasLocation" x="51.449275362318843" y="130.24553571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image 41" width="73" height="78"/>
+        <image name="star" width="10" height="10"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="OffBlack">
+            <color red="0.078431372549019607" green="0.078431372549019607" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Success">
+            <color red="0.0" green="0.80000000000000004" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

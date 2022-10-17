@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Golos-Text_Bold.ttf">
+            <string>GolosText-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="32" id="KGk-i7-Jjw" customClass="ProductTableViewCell" customModule="foodly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="32"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cS7-uh-fmw">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Глютен" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXj-6w-qFG">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Yz1-qB-4uo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GolosText-Bold" family="Golos" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="820-xg-0vU">
+                                <rect key="frame" x="140" y="0.0" width="140" height="32"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIa-xO-BRm">
+                                        <rect key="frame" x="9.5" y="2" width="130.5" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="не рекомендуется" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evb-aw-BDX">
+                                                <rect key="frame" x="10" y="0.0" width="110.5" height="28"/>
+                                                <fontDescription key="fontDescription" name="GolosText-Bold" family="Golos" pointSize="12"/>
+                                                <color key="textColor" name="OffWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Success"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="evb-aw-BDX" secondAttribute="bottom" id="4xD-qf-VV8"/>
+                                            <constraint firstItem="evb-aw-BDX" firstAttribute="leading" secondItem="eIa-xO-BRm" secondAttribute="leading" constant="10" id="JgN-Jq-x0D"/>
+                                            <constraint firstAttribute="height" constant="28" id="L6F-ei-muI"/>
+                                            <constraint firstItem="evb-aw-BDX" firstAttribute="centerY" secondItem="eIa-xO-BRm" secondAttribute="centerY" id="RD3-XM-Lk0"/>
+                                            <constraint firstItem="evb-aw-BDX" firstAttribute="centerX" secondItem="eIa-xO-BRm" secondAttribute="centerX" id="Sdq-aE-8Xk"/>
+                                            <constraint firstItem="evb-aw-BDX" firstAttribute="top" secondItem="eIa-xO-BRm" secondAttribute="top" id="acH-19-oEI"/>
+                                            <constraint firstAttribute="trailing" secondItem="evb-aw-BDX" secondAttribute="trailing" constant="10" id="dx7-h4-bHs"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eIa-xO-BRm" secondAttribute="trailing" id="HUz-Vd-jBW"/>
+                                    <constraint firstItem="eIa-xO-BRm" firstAttribute="centerY" secondItem="820-xg-0vU" secondAttribute="centerY" id="sMv-zl-hFs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="820-xg-0vU" firstAttribute="top" secondItem="cS7-uh-fmw" secondAttribute="top" id="2xA-T6-mU6"/>
+                            <constraint firstAttribute="bottom" secondItem="820-xg-0vU" secondAttribute="bottom" id="Q1v-o7-OW0"/>
+                            <constraint firstItem="UXj-6w-qFG" firstAttribute="top" secondItem="cS7-uh-fmw" secondAttribute="top" id="g1N-vU-0Rd"/>
+                            <constraint firstAttribute="bottom" secondItem="UXj-6w-qFG" secondAttribute="bottom" id="oia-4k-tfT"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cS7-uh-fmw" secondAttribute="trailing" id="89b-Bh-DjN"/>
+                    <constraint firstAttribute="bottom" secondItem="cS7-uh-fmw" secondAttribute="bottom" id="A8I-hM-RQN"/>
+                    <constraint firstItem="cS7-uh-fmw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="F9b-GK-R7p"/>
+                    <constraint firstItem="cS7-uh-fmw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Opu-Ur-Spi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tableBackColor" destination="eIa-xO-BRm" id="wNI-hm-pxa"/>
+                <outlet property="tableDanger" destination="evb-aw-BDX" id="Nm6-Om-eAa"/>
+                <outlet property="tableName" destination="UXj-6w-qFG" id="3Ad-bf-Avu"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="OffWhite">
+            <color red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Success">
+            <color red="0.0" green="0.80000000000000004" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
